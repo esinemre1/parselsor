@@ -1,0 +1,1 @@
+window.APP_CONFIG={API:'https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api',START:[38.65,32.92],ZOOM:9};
