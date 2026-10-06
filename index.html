@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ParselSor</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <div id="map"></div>
+  <header class="topbar">
+    <div class="brand"><div class="logo">PS</div><div><strong>ParselSor</strong><span>TKGM parsel görüntüleyici</span></div></div>
+    <div class="actions"><button id="panelToggle">☰</button><button id="basemapToggle">Uydu</button></div>
+  </header>
+  <aside id="panel" class="panel open">
+    <div class="panel-head"><div><small>PARSEL SORGULAMA</small><h2>Adres ile sorgula</h2></div><button id="panelClose">×</button></div>
+    <div class="field"><label>İl</label><select id="il"><option value="">İl seçiniz</option></select></div>
+    <div class="field"><label>İlçe</label><select id="ilce" disabled><option value="">Önce il seçiniz</option></select></div>
+    <div class="field"><label>Mahalle / Köy</label><select id="mahalle" disabled><option value="">Önce ilçe seçiniz</option></select></div>
+    <div class="grid2">
+      <div class="field"><label>Ada</label><input id="ada" placeholder="355"></div>
+      <div class="field"><label>Parsel</label><input id="parsel" placeholder="25"></div>
+    </div>
+    <button id="searchBtn" class="primary">Parseli Sorgula</button>
+    <button id="pickBtn" class="secondary">Haritadan Parsel Seç</button>
+    <div id="status" class="status">Hazır</div>
+  </aside>
+  <div id="infoCard" class="info-card hidden"></div>
+  <div class="coord" id="coord">—</div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
