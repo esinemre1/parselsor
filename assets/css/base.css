@@ -1,0 +1,1 @@
+:root{--glass:rgba(17,24,39,.86);--line:rgba(255,255,255,.12);--text:#fff;--muted:#b8c1cf}*{box-sizing:border-box}html,body,#map{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif}body{overflow:hidden;background:#0b1220}.hidden{display:none!important}button,input,select{font:inherit}
